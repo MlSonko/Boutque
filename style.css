@@ -83,3 +83,278 @@ body {
   background-color: #a89f94;
 }
 
+/* ===== RESET / BASE ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background-color: #f9f9f9;
+  color: #222;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===== NAVBAR (taupe from Nina-style) ===== */
+.navbar {
+  background-color: #a89f94;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: none;
+}
+
+.navbar-brand {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #ffffff !important;
+  text-transform: uppercase;
+}
+
+.nav-link {
+  color: #ffffff !important;
+  font-weight: 400;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-left: 0.75rem;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #f0e9e0 !important;
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.45);
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* ===== HERO CAROUSEL – FIXED SIZE ===== */
+.hero-img {
+  height: 85vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.58);
+}
+
+.carousel-caption {
+  bottom: 20%;
+  left: 0;
+  right: 0;
+  text-align: left;
+  padding: 0 1rem;
+}
+
+.carousel-caption h1 {
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+}
+
+/* ===== HOMEPAGE CATEGORY CARDS ===== */
+.category-card {
+  height: 480px;
+  position: relative;
+  overflow: hidden;
+}
+
+.category-card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.6s ease;
+}
+
+.category-card:hover img {
+  transform: scale(1.05);
+}
+
+.category-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.38);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* ===== PRODUCT CARDS ===== */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+}
+
+.card-img-top {
+  height: 320px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ===== BUTTONS ===== */
+.btn-dark {
+  background-color: #111;
+  border-color: #111;
+}
+
+.btn-dark:hover {
+  background-color: #000;
+  border-color: #000;
+}
+
+/* ===== TABLET / PHONE ===== */
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    padding-top: 0.75rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .nav-link {
+    margin-left: 0;
+    padding: 0.7rem 0 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+  }
+
+  .hero-img {
+    height: 70vh;
+  }
+
+  .carousel-caption {
+    bottom: 12%;
+  }
+
+  .carousel-caption h1 {
+    font-size: 1.75rem;
+  }
+
+  .carousel-caption .lead {
+    font-size: 1rem;
+    margin-bottom: 1rem !important;
+  }
+
+  .carousel-caption .btn {
+    margin-bottom: 0.5rem;
+  }
+
+  .category-card {
+    height: 360px;
+  }
+
+  .card-img-top {
+    height: 240px;
+  }
+
+  .display-4,
+  .display-5 {
+    font-size: 2rem;
+  }
+
+  /* Easier taps */
+  a.btn,
+  button,
+  .btn {
+    min-height: 44px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-img {
+    height: 62vh;
+  }
+
+  .carousel-caption h1 {
+    font-size: 1.5rem;
+  }
+
+  .category-card {
+    height: 300px;
+  }
+
+  .card-img-top {
+    height: 200px;
+  }
+}
+
+/* Hide the empty Bootstrap icon */
+.navbar-toggler-icon {
+  display: none;
+}
+
+/* Show a real menu symbol */
+.navbar-toggler {
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  padding: 0.25rem 0.6rem;
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.navbar-toggler::after {
+  content: "☰";
+  color: #fff;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: #a89f94;
+    margin-top: 0.75rem;
+    padding: 0.5rem 0.75rem 1rem;
+    border-radius: 8px;
+  }
+
+  .nav-link {
+    color: #fff !important;
+    margin-left: 0;
+    padding: 0.8rem 0.25rem !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .navbar-nav .btn {
+    margin-top: 0.75rem;
+    width: 100%;
+  }
+}
+
