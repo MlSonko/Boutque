@@ -1,0 +1,85 @@
+.navbar-brand {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 3px;
+  color: #ffffff !important;
+  text-transform: uppercase;
+}
+
+.navbar {
+  background-color: #a89f94; 
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  border-bottom: none;
+}
+
+.navbar-brand {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 3px;
+  color: #ffffff !important;
+  text-transform: uppercase;
+}
+
+.nav-link {
+  color: #ffffff !important;
+  font-weight: 400;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-left: 1rem;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #f0e9e0 !important;
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+.hero-img {
+  height: 85vh;          
+  width: 100%;
+  object-fit: cover;     
+  object-position: center;
+}
+
+@media (max-width: 768px) {
+  .hero-img {
+    height: 70vh;
+  }
+}
+
+.hero-img {
+  height: 85vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-img-top {
+  height: 320px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.category-card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+body {
+  background-color: #a89f94;
+}
+
